@@ -1,15 +1,15 @@
 enterA = input().split()
-piceA = enterA[0] 
-manyA = enterA[1]
-valueA = enterA[2] 
+piceA = int(enterA[0]) 
+manyA = int(enterA[1])
+valueA = float(enterA[2]) 
 
 enterB = input().split()
-piceB = enterB[0] 
-mBnyB = enterB[1]
-vBlueB = enterB[2] 
+piceB = int(enterB[0]) 
+manyB = int(enterB[1])
+valueB = float(enterB[2]) 
 
 
 
-total = numPicesA * valueA + numPicesB * valueB
+total = manyA * valueA + manyB * valueB
 
 print("VALOR A PAGAR: R$ {:.2f}".format(total))
